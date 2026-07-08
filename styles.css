@@ -118,7 +118,7 @@ h2{font-family:"Anton",sans-serif;font-weight:400;font-size:clamp(2.6rem,8vw,7re
 
 /* reveals — JS-gated so content survives a CDN failure */
 .js .reveal{opacity:0;transform:translateY(40px)}
-.is-in{opacity:1;transform:none;transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .reveal.is-in{opacity:1;transform:none;transition:opacity .9s var(--ease),transform .9s var(--ease)}
 /* hero intro — CSS-driven */
 .js .hero-title .line,.js .hero-meta,.js .hero-sub{opacity:0;transform:translateY(30px);
   transition:opacity 1s var(--ease),transform 1s var(--ease)}
