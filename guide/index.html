@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>MONOLITH — Guide · How this was built</title>
-<meta name="description" content="How the MONOLITH site was built with Fable: a kinetic-type engine with text scramble, scroll-velocity skew, and magnetic buttons." />
+<meta name="description" content="How the MONOLITH site was built with Formwork: a kinetic-type engine with text scramble, scroll-velocity skew, and magnetic buttons." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -40,7 +40,7 @@
   <div class="top"><a class="brand" href="../">MONOLITH®</a><a href="../">← Back to site</a></div>
   <span class="tag">Build guide · Site 02 of 25</span>
   <h1>Type that <em>refuses</em> to sit still.</h1>
-  <p class="lede">MONOLITH is one of 25 sites built by Fable to show what's possible on the web.
+  <p class="lede">MONOLITH is one of 25 sites built by Formwork to show what's possible on the web.
     This one is pure typography — no images, no 3D — carried entirely by motion.</p>
 
   <h2>The idea</h2>
@@ -76,15 +76,15 @@ el.textContent = out;   // ...until reveal reaches the end</code></pre>
 
   <h2>Ship it on GitHub Pages</h2>
   <pre><code>git init -b main &amp;&amp; git add -A &amp;&amp; git commit -m "ship"
-gh repo create fable-monolith --public --source=. --push
-gh api --method POST /repos/OWNER/fable-monolith/pages \
+gh repo create formwork-monolith --public --source=. --push
+gh api --method POST /repos/OWNER/formwork-monolith/pages \
   -f 'source[branch]=main' -f 'source[path]=/'</code></pre>
   <p>Keep paths relative and drop a <code>.nojekyll</code> file so everything serves as-is.</p>
 
   <div class="rule"></div>
   <p>One typeface doing the heavy lifting, two supporting it, and motion wired to the two things a
     visitor always controls: their scroll and their cursor.</p>
-  <footer>Designed &amp; built by <strong>Fable</strong> · Part of a 25-site showcase · <a href="../">Return to MONOLITH →</a></footer>
+  <footer>Designed &amp; built by <strong>Formwork</strong> · Part of a 25-site showcase · <a href="../">Return to MONOLITH →</a></footer>
 </div>
 </body>
 </html>
